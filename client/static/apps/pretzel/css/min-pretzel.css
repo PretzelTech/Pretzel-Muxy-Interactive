@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'min-pretzel';
+  src: url('../font/min-pretzel.eot?21351552');
+  src: url('../font/min-pretzel.eot?21351552#iefix') format('embedded-opentype'),
+       url('../font/min-pretzel.woff2?21351552') format('woff2'),
+       url('../font/min-pretzel.woff?21351552') format('woff'),
+       url('../font/min-pretzel.ttf?21351552') format('truetype'),
+       url('../font/min-pretzel.svg?21351552#min-pretzel') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'min-pretzel';
+    src: url('../font/min-pretzel.svg?21351552#min-pretzel') format('svg');
+  }
+}
+*/
+ 
+ [class^="pretzel-icon-"]:before, [class*=" pretzel-icon-"]:before {
+  font-family: "min-pretzel";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.pretzel-icon-close:before { content: '\e804'; } /* '' */
+.pretzel-icon-mobile_listen:before { content: '\e808'; } /* '' */
+.pretzel-icon-player_play:before { content: '\e80e'; } /* '' */
+.pretzel-icon-thumbs_up:before { content: '\e810'; } /* '' */
+.pretzel-icon-tracklist_play:before { content: '\e819'; } /* '' */
+.pretzel-icon-brand:before { content: '\e81b'; } /* '' */
+.pretzel-icon-link:before { content: '\e822'; } /* '' */
