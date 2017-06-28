@@ -8,7 +8,7 @@
       <div class="pretzel--currentTrack-listen">
         <span v-if="track && track.token != null"></span>
         <!-- <span v-if="track && track.token != null"><i class="pretzel-icon-thumbs_up"/> {{likes}}</span> -->
-        <a v-if="track && track.token != null" :href="link" target="_blank">Listen <i class="pretzel-icon-mobile_listen" /></a>
+        <a v-if="track && track.token != null" :href="link" target="_blank" rel="noreferrer nofollow">Listen <i class="pretzel-icon-mobile_listen" /></a>
       </div>
     </div>
     <div class="pretzel--previousTrack-section">
@@ -20,7 +20,7 @@
         <div :title="prevTrack.artistName" class="pretzel--previousTrack-artistName pretzel--previousTrack-artistName-overflow">{{prevTrack.artistName}}</div>
       </div>
       <div class="pretzel--previousTrack-listenLink">
-        <a :href="prevTrack.link" target="_blank">Listen <i class="pretzel-icon-mobile_listen" /></a>
+        <a :href="prevTrack.link" target="_blank" rel="noreferrer nofollow">Listen <i class="pretzel-icon-mobile_listen" /></a>
       </div>
     </div>
     <div v-if="history.length == 0" class="pretzel--previousTrack pretzel--previousTrack-noData">
@@ -31,7 +31,7 @@
     <div class="pretzel--footer">
       <div class="pretzel--pretzelBrand">
         <p>powered by</p>
-        <a href="https://pretzel.rocks" target="_blank">
+        <a href="https://pretzel.rocks" target="_blank" rel="noreferrer nofollow">
           <i class="pretzel-icon-brand" />
         </a>
       </div>
